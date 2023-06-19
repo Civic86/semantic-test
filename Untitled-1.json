@@ -1,0 +1,70 @@
+{
+    "branches": [
+        {"name": "main" }
+    ],
+    "plugins": [
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "preset": "conventionalCommits",
+          "releaseRules": [
+            {
+              "type": "fix",
+              "release": "patch"
+            },
+            {
+              "type": "chore",
+              "release": "patch"
+            }
+          ],
+          "parserOpts": {
+            "noteKeywords": [
+              "BREAKING"
+            ]
+          }
+        }
+      ],
+      [
+        "@semantic-release/release-notes-generator",
+        {
+          "preset": "conventionalCommits",
+          "parserOpts": {
+            "noteKeywords": [
+              "BREAKING"
+            ]
+          },
+          "presetConfig": {
+            "types": [
+              {
+                "type": "feat",
+                "section": "Feature"
+              },
+              {
+                "type": "fix",
+                "section": "Fix"
+              },
+              {
+                "type": "chore",
+                "section": "Chore",
+                "hidden": false
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md"
+          ]
+        }
+      ]
+    ]
+  }
