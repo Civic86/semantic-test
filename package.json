@@ -10,27 +10,6 @@
   "scripts": {
     "semantic-release": "semantic-release"
   },
-  "release": {
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      [
-        "@semantic-release/github",
-        {
-          "assets": [
-            {
-              "path": "dist/asset.min.css",
-              "label": "CSS distribution"
-            },
-            {
-              "path": "dist/asset.min.js",
-              "label": "JS distribution"
-            }
-          ]
-        }
-      ]
-    ]
-  },
   "devDependencies": {
     "@semantic-release/github": "^9.0.3"
   }
