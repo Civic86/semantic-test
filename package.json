@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "semantic-release": "^21.0.5"
+    "semantic-release": "^21.0.5",
+    "@semantic-release/git": "^10.0.1"
   },
   "scripts": {
     "semantic-release": "semantic-release"
