@@ -1,16 +1,14 @@
 {
   "dependencies": {
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/git": "^10.0.1",
-    "conventional-changelog-conventionalcommits": "^6.1.0",
-    "marked-gfm-heading-id": "^3.0.4",
-    "marked-mangle": "^1.0.1",
     "semantic-release": "^21.0.5"
   },
   "scripts": {
     "semantic-release": "semantic-release"
   },
-  "devDependencies": {
-    "@semantic-release/github": "^9.0.3"
-  }
+  "name": "semantic-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Civic86/semantic-test.git",
+  "author": "Civic86 <kaikoharazawa@gmail.com>",
+  "license": "MIT"
 }
